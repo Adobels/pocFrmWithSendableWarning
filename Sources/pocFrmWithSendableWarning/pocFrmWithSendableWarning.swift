@@ -23,3 +23,11 @@ public class Jojo {
     }
 }
 
+public class myModel {
+    public var title: String
+
+    public init(title: String) {
+        self.title = title
+    }
+}
+
