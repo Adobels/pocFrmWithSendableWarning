@@ -9,6 +9,11 @@ public class Jojo {
     }
 
     @preconcurrency
+    public func warningWithPre(input: AnyHashable, content: @escaping @Sendable () -> Void) {
+        self.mmm = content
+    }
+
+    @preconcurrency
     public func warning(input: AnyHashable, content: @escaping @Sendable () -> Void) {
         self.mmm = content
     }
