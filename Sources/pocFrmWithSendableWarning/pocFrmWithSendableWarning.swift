@@ -11,5 +11,9 @@ public class Jojo {
     public func warning(input: AnyHashable, content: @escaping @Sendable () -> Void) {
         self.mmm = content
     }
+
+    public init() {
+
+    }
 }
 
