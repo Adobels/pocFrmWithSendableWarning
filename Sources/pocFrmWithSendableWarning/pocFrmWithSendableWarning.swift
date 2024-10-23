@@ -4,6 +4,6 @@ public func hello(input: AnyHashable) {
     }
 }
 
-private func warning(input: AnyHashable, content: @escaping @Sendable () -> Void) {
+public func warning(input: AnyHashable, content: @escaping @Sendable () -> Void) {
     content()
 }
