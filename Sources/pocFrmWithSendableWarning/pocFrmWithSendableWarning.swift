@@ -13,9 +13,12 @@ public class Jojo {
         self.mmm = content
     }
 
-    @preconcurrency
     public func warning(input: AnyHashable, content: @escaping @Sendable () -> Void) {
         self.mmm = content
+    }
+
+    public func warningWithPre(input: AnyHashable, content: @escaping @Sendable (MyModel) -> Void) {
+        content(MyModel(title: ""))
     }
 
     public init() {
@@ -23,7 +26,7 @@ public class Jojo {
     }
 }
 
-public class myModel {
+public class MyModel {
     public var title: String
 
     public init(title: String) {
