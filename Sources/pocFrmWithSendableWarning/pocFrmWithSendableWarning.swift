@@ -17,7 +17,7 @@ public class Jojo {
         self.mmm = content
     }
 
-    public func warningWithPre(input: AnyHashable, content: @escaping @Sendable (MyModel) -> Void) {
+    public func warningWithModel(input: AnyHashable, content: @escaping @Sendable (MyModel) -> Void) {
         content(MyModel(title: ""))
     }
 
