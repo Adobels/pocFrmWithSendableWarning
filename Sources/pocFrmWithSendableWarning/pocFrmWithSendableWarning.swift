@@ -26,6 +26,10 @@ public class Jojo {
         content(MyModel(title: ""))
     }
 
+    public func warningWithModelSendable(input: AnyHashable, content: @escaping @Sendable Momo) {
+        content(MyModel(title: ""))
+    }
+
     public init() {
 
     }
