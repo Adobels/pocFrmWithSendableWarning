@@ -22,6 +22,7 @@ let package = Package(
             swiftSettings: [
                 .enableUpcomingFeature("ExistentialAny"),
                 .enableExperimentalFeature("StrictConcurrency"),
+                .enableUpcomingFeature("StrictConcurrency"),
             ]
         ),
     ],
