@@ -1,4 +1,9 @@
+
+public typealias Momo = (MyModel) -> Void
+
 public class Jojo {
+
+
 
     public var mmm: (() -> Void)?
 
@@ -17,7 +22,7 @@ public class Jojo {
         self.mmm = content
     }
 
-    public func warningWithModel(input: AnyHashable, content: @escaping (MyModel) -> Void) {
+    public func warningWithModel(input: AnyHashable, content: @escaping Momo) {
         content(MyModel(title: ""))
     }
 
